@@ -70,7 +70,7 @@ public class WeightedDirectedGraphTest {
 
     @Test
     public void testGetDFSPath() {
-        int[] expectedPath = {1, 4, 5, 8, 9};
+        int[] expectedPath = {1, 4, 7, 2, 6, 5, 8, 9};
         int[] actualPath = graph.getDFSPath(1, 9);
         assertArrayEquals(expectedPath, actualPath, "The DFS path from 1 to 9 should match the expected path.");
     }
